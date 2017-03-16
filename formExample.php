@@ -1,6 +1,6 @@
 <h2>Form Examples</h2>
 
-<form action="index.php" method="post">
+<form action="formExample.php" method="post">
 
 <select class="" name="country">
 
@@ -12,3 +12,10 @@
     <input class="btn btn=primary" type="submit" name="btnSend" value="Send">
 </form>
 
+<?php
+$theButton=$_POST['btnSend'];
+if (isset($theButton)) {
+  $chosen=$_POST['country'];
+  echo 'You have chosen: '.$chosen;
+}
+ ?>
