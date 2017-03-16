@@ -25,7 +25,7 @@ $students=array(
 ?>
 
 <h3>Names in a Table</h3>
-<table border=1>
+<table class="table table-striped table-hover" border=1>
     <tr><th>Firstname</th><th>Lastname</th></tr>
     <?php
         foreach ($students as $row)
